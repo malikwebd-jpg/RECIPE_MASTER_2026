@@ -17,6 +17,6 @@ function homeAction(PDO $conn)
     global $title, $content;
     $title = "Home";
     ob_start();
-    include __DIR__ . '/../views/home.php';
+    include __DIR__ . '/../views/pages/home.php';
     $content = ob_get_clean();
 }
